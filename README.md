@@ -660,10 +660,10 @@ Distributed under the MIT License. See `LICENSE` file for more information.
 
 **Your Name**
 
-- GitHub: [@yourusername](https://github.com/bhavanareddy19)
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/bhavanareddy19/)
+- GitHub: [@bhavanareddy19](https://github.com/bhavanareddy19)
+- LinkedIn: [https://www.linkedin.com/in/bhavanareddy19/](https://www.linkedin.com/in/bhavanareddy19/)
 - Email: Bhavana.Vippala@colorado.edu
-- Portfolio: [yourwebsite.com](https://bhavana19portfolio.netlify.app/)
+- Portfolio: [https://bhavana19portfolio.netlify.app/](https://bhavana19portfolio.netlify.app/)
 
 ---
 
