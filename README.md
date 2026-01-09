@@ -1,230 +1,155 @@
+# 💰 AiDIY - AI-Powered Financial Literacy for Kids
+
 <div align="center">
 
-# 🌟 AiDIY - AI-Powered Financial Literacy Platform
+![Version](https://img.shields.io/badge/version-1.0-blue.svg)
+![JavaScript](https://img.shields.io/badge/JavaScript-86.3%25-yellow.svg)
+![Python](https://img.shields.io/badge/Python-11.7%25-green.svg)
+![License](https://img.shields.io/badge/license-MIT-purple.svg)
 
-### Empowering Children with Smart Money Management Skills
+**Teaching children money management through gamification and AI-powered coaching**
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![React](https://img.shields.io/badge/React-18.2-61DAFB.svg)](https://reactjs.org/)
-[![Flask](https://img.shields.io/badge/Flask-2.3-000000.svg)](https://flask.palletsprojects.com/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Latest-47A248.svg)](https://www.mongodb.com/)
-[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991.svg)](https://openai.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-[Live Demo](#) • [Documentation](#getting-started) • [Report Bug](#) • [Request Feature](#)
+[Features](#-key-features) • [Tech Stack](#-tech-stack) • [Installation](#-installation) • [Demo](#-demo)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## 📋 Overview
 
-- [About The Project](#about-the-project)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [Architecture](#architecture)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Documentation](#api-documentation)
-- [Screenshots](#screenshots)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+**AiDIY** is an innovative financial literacy platform that makes learning about money fun and engaging for children. By combining gamification, AI coaching, and practical money management tools, AiDIY helps kids develop healthy financial habits from an early age.
 
----
+### 🎯 The Problem
 
-## 🎯 About The Project
+- **70% of children** lack basic financial literacy skills
+- Traditional financial education is boring and inaccessible
+- Parents struggle to teach money management effectively
+- Kids learn best through interactive, gamified experiences
 
-**AiDIY** is an innovative educational platform that revolutionizes financial literacy education for children by combining cutting-edge artificial intelligence with gamification principles. The platform creates a safe, engaging environment where children can learn essential money management skills through personalized learning experiences, interactive challenges, and real-world practice scenarios.
+### ✅ The Solution
 
-### 🌈 The Vision
-
-In today's digital age, financial literacy is more crucial than ever. AiDIY bridges the gap between traditional financial education and modern technology, making learning about money fun, interactive, and accessible for children of all ages.
-
-### 🎖️ What Makes It Special
-
-- **AI-Powered Learning**: Leverages OpenAI's GPT-4o for personalized financial coaching
-- **Gamification**: Makes financial education engaging through rewards, achievements, and challenges
-- **Parent Dashboard**: Comprehensive tools for parents to monitor and guide their children's financial journey
-- **Multi-Modal Interaction**: Supports text, voice, and image-based communication with the AI assistant
-- **Real-World Application**: Provides practical experience with saving, goal-setting, and earning through chores
+AiDIY provides:
+- **AI Financial Coach** powered by GPT-4o for personalized guidance
+- **Gamified Learning** with challenges, rewards, and goal tracking
+- **Practical Tools** for savings, budgeting, and chore management
+- **Parent Dashboard** for monitoring progress and engagement
 
 ---
 
 ## ✨ Key Features
 
-### 👨‍👩‍👧‍👦 For Parents
+### 🤖 **AI-Powered Coaching**
+- GPT-4o-based financial advisor tailored for children
+- Multi-modal support: voice, text, and image interactions
+- Personalized learning paths based on age and progress
+- Real-time financial tips and encouragement
 
-- **📊 Comprehensive Dashboard**
-  - Real-time monitoring of children's progress
-  - Visual analytics and insights
-  - Multi-child profile management
+### 🎮 **Gamification System**
+- Interactive challenges and quests
+- Achievement badges and rewards
+- Progress tracking and leaderboards
+- Goal-setting and milestone celebrations
 
-- **🤖 AI Financial Coach**
-  - Personalized advice based on child's assessment
-  - Voice and chat interface with GPT-4o
-  - Image recognition for teaching financial concepts
+### 💼 **Money Management Tools**
+- Virtual savings accounts with goal tracking
+- Chore assignment with reward systems
+- Budget planning and expense tracking
+- Parent-supervised transactions
 
-- **📝 Task & Chore Management**
-  - Create and assign age-appropriate financial tasks
-  - AI-powered chore recommendations
-  - Customizable reward system
+### 👨‍👩‍👧 **Parent Dashboard**
+- Real-time progress monitoring
+- Activity logs and reports
+- Customizable chore assignments
+- Notification system for milestones
 
-- **📈 Progress Tracking**
-  - Detailed learning journey analytics
-  - Goal completion monitoring
-  - Financial knowledge assessments
-
-### 👧👦 For Children
-
-- **🎮 Gamified Learning Experience**
-  - Earn rewards and unlock achievements
-  - Interactive financial challenges
-  - Fun, age-appropriate content
-
-- **🏦 Virtual Piggy Bank**
-  - Practice saving in a safe environment
-  - Set and track financial goals
-  - Learn money management fundamentals
-
-- **🎯 Goal-Setting System**
-  - Create personalized savings goals
-  - Track progress visually
-  - Learn delayed gratification
-
-- **⭐ Achievement System**
-  - Complete chores to earn rewards
-  - Build financial responsibility
-  - Develop good money habits
+### 🔒 **Security & Authentication**
+- JWT and OAuth 2.0 authentication
+- OTP email verification
+- Multi-user profile management
+- Secure data encryption
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-```
-⚛️  React 18.2          - Modern UI library
-🔄  Redux Toolkit       - State management
-🎨  Tailwind CSS        - Utility-first styling
-🚦  React Router v6     - Client-side routing
-📡  Axios               - HTTP client
-```
+### **Frontend**
+- **React 18.2** - Modern UI library with hooks
+- **Redux Toolkit** - State management
+- **Tailwind CSS** - Utility-first styling
+- **React Router v6** - Client-side routing
 
-### Backend
-```
-🐍  Python 3.8+         - Core language
-🌶️  Flask 2.3          - Web framework
-🍃  MongoDB             - NoSQL database
-🔐  JWT                 - Authentication
-🧠  OpenAI GPT-4o       - AI integration
-📧  Flask-Mail          - Email services
-```
+### **Backend**
+- **Python 3.8+**
+- **Flask 2.3** - Lightweight web framework
+- **MongoDB** - NoSQL database for flexible data models
+- **OpenAI GPT-4o** - AI coaching intelligence
+- **JWT** - Secure authentication
 
-### DevOps & Tools
-```
-🐳  Docker              - Containerization
-☁️  Vercel/Railway      - Deployment platforms
-🔧  Git                 - Version control
-📝  Postman             - API testing
-```
+### **Deployment**
+- **Vercel** - Frontend hosting
+- **Railway/Docker** - Backend containerization
+- **Git** - Version control
 
 ---
 
 ## 🏗️ Architecture
 
-### System Architecture
-
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                     Frontend (React)                        │
-│  ┌────────────┬──────────────┬─────────────┬─────────────┐ │
-│  │  Dashboard │  Auth Pages  │  Kid Pages  │  AI Chat    │ │
-│  └────────────┴──────────────┴─────────────┴─────────────┘ │
-└───────────────────────────┬─────────────────────────────────┘
-                            │ REST API
-┌───────────────────────────┴─────────────────────────────────┐
-│                    Backend (Flask)                          │
-│  ┌──────────┬───────────┬──────────┬────────────────────┐  │
-│  │   Auth   │  User Mgmt │  AI API  │  Task Management  │  │
-│  └──────────┴───────────┴──────────┴────────────────────┘  │
-└───────────────────────────┬─────────────────────────────────┘
-                            │
-        ┌───────────────────┼───────────────────┐
-        │                   │                   │
-┌───────▼────────┐  ┌──────▼──────┐   ┌───────▼────────┐
-│    MongoDB     │  │  OpenAI API │   │   Gmail SMTP   │
-│   (Database)   │  │  (AI Coach) │   │  (Email OTP)   │
-└────────────────┘  └─────────────┘   └────────────────┘
+┌─────────────────────────────────────────────────────┐
+│                   React Frontend                     │
+│  ┌──────────────┐  ┌──────────────┐  ┌───────────┐ │
+│  │   Dashboard  │  │   AI Chat    │  │  Rewards  │ │
+│  │   (Parent)   │  │   (Child)    │  │  System   │ │
+│  └──────┬───────┘  └──────┬───────┘  └─────┬─────┘ │
+└─────────┼──────────────────┼─────────────────┼──────┘
+          │                  │                 │
+          └──────────────────┼─────────────────┘
+                             ▼
+          ┌─────────────────────────────────────┐
+          │        Flask REST API Server        │
+          │  ┌────────────┐  ┌───────────────┐ │
+          │  │   Auth     │  │   AI Coach    │ │
+          │  │  Service   │  │   (GPT-4o)    │ │
+          │  └─────┬──────┘  └───────┬───────┘ │
+          └────────┼──────────────────┼─────────┘
+                   ▼                  ▼
+          ┌────────────────┐  ┌──────────────┐
+          │    MongoDB     │  │  OpenAI API  │
+          │   Database     │  │              │
+          └────────────────┘  └──────────────┘
 ```
-
-### Database Schema
-
-**Collections:**
-- `users` - Parent account information
-- `children` - Child profiles and data
-- `goals` - Savings goals and progress
-- `chores` - Task assignments and completion
-- `chat_sessions` - AI conversation history
-- `notifications` - System notifications
-- `otps` - One-time passwords for authentication
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Installation
 
 ### Prerequisites
+- Node.js 16+ and npm
+- Python 3.8+
+- MongoDB instance
+- OpenAI API key
 
-Before you begin, ensure you have the following installed:
-
-```bash
-# Required
-- Python 3.8 or higher
-- Node.js 14.x or higher
-- MongoDB 4.x or higher
-- Git
-
-# Recommended
-- pip (Python package manager)
-- npm (Node package manager)
-- MongoDB Compass (for database management)
-```
-
-### API Keys Required
-
-1. **OpenAI API Key** - [Get it here](https://platform.openai.com/api-keys)
-2. **Google OAuth Credentials** - [Console](https://console.cloud.google.com/)
-3. **Gmail App Password** - [Setup Guide](https://support.google.com/accounts/answer/185833)
-
----
-
-## 📥 Installation
-
-### 1️⃣ Clone the Repository
+### Backend Setup
 
 ```bash
-git clone https://github.com/yourusername/AiDIY.git
+# Clone the repository
+git clone https://github.com/bhavanareddy19/AiDIY.git
 cd AiDIY
-```
-
-### 2️⃣ Backend Setup
-
-```bash
-# Create and activate virtual environment
-python -m venv .venv
-
-# On Windows:
-.venv\Scripts\activate
-
-# On macOS/Linux:
-source .venv/bin/activate
 
 # Install Python dependencies
 pip install -r requirements.txt
+
+# Set up environment variables
+cp .env.example .env
+# Add your OpenAI API key and MongoDB connection string
+
+# Run the Flask server
+python app.py
 ```
 
-### 3️⃣ Frontend Setup
+Server will be available at `http://localhost:5000`
+
+### Frontend Setup
 
 ```bash
 # Navigate to client directory
@@ -233,357 +158,98 @@ cd client
 # Install dependencies
 npm install
 
-# Return to root directory
-cd ..
-```
-
-### 4️⃣ Environment Configuration
-
-Create a `.env` file in the root directory:
-
-```bash
-# Copy the example file
+# Set up environment variables
 cp .env.example .env
+# Configure API endpoint
 
-# Edit .env with your actual credentials
-```
-
-**Important Environment Variables:**
-
-```env
-# MongoDB
-MONGO_URI=mongodb://localhost:27017/aidiy_app
-
-# Security
-JWT_SECRET=your_super_secret_jwt_key
-FLASK_SECRET_KEY=your_flask_secret_key
-
-# OpenAI
-OPENAI_API_KEY=sk-your_openai_api_key
-
-# Email (Gmail)
-MAIL_USERNAME=your_email@gmail.com
-MAIL_PASSWORD=your_app_password
-
-# Development
-DEV_MODE=True
-```
-
-### 5️⃣ Database Setup
-
-```bash
-# Start MongoDB
-# On Windows:
-net start MongoDB
-
-# On macOS (Homebrew):
-brew services start mongodb-community
-
-# On Linux:
-sudo systemctl start mongod
-```
-
----
-
-## 💻 Usage
-
-### Running the Application
-
-**Option 1: Manual Start (Recommended for Development)**
-
-Terminal 1 - Backend:
-```bash
-# Activate virtual environment
-.venv\Scripts\activate  # Windows
-source .venv/bin/activate  # macOS/Linux
-
-# Start Flask server
-python app.py
-
-# Server runs on http://localhost:5500
-```
-
-Terminal 2 - Frontend:
-```bash
-# Navigate to client directory
-cd client
-
-# Start React development server
+# Start development server
 npm start
-
-# App opens on http://localhost:3000
 ```
 
-**Option 2: Using Start Script**
-
-```bash
-# Make script executable (macOS/Linux only)
-chmod +x start.sh
-
-# Run the script
-./start.sh
-```
-
-### 🎯 Testing the Application
-
-1. **Access the Application**
-   - Open browser: `http://localhost:3000`
-
-2. **Create a Parent Account**
-   - Click "Sign Up"
-   - Fill in registration details
-   - Verify email with OTP
-   - Complete profile setup
-
-3. **Add a Child Profile**
-   - Navigate to "Add Child"
-   - Enter child's information
-   - Set up login credentials
-
-4. **Explore Features**
-   - Try the AI Coach
-   - Create chores and tasks
-   - Set up savings goals
-   - Monitor progress
+Application will open at `http://localhost:3000`
 
 ---
 
-## 📡 API Documentation
+## 💡 Usage
 
-### Authentication Endpoints
+### For Parents
 
-#### Register User
-```http
-POST /api/auth/register
-Content-Type: application/json
+1. **Create Account** - Sign up with email verification
+2. **Add Children** - Create profiles for your kids
+3. **Set Up Chores** - Assign tasks with reward amounts
+4. **Monitor Progress** - Track savings, goals, and achievements
+5. **Approve Transactions** - Review and approve spending requests
 
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "email": "john@example.com",
-  "password": "SecurePass123!",
-  "phoneNumber": "+1234567890"
-}
-```
+### For Children
 
-#### Login
-```http
-POST /api/auth/login
-Content-Type: application/json
-
-{
-  "email": "john@example.com",
-  "password": "SecurePass123!"
-}
-
-Response: {
-  "success": true,
-  "appToken": "jwt_token_here",
-  "user": { ... }
-}
-```
-
-#### Verify OTP
-```http
-POST /api/auth/verify-otp
-Content-Type: application/json
-
-{
-  "email": "john@example.com",
-  "otp": "123456"
-}
-```
-
-### User Management
-
-#### Get Profile
-```http
-GET /api/users/profile
-Authorization: Bearer {token}
-
-Response: {
-  "success": true,
-  "user": { ... }
-}
-```
-
-#### Update Profile
-```http
-PUT /api/users/profile
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "parentRole": "Dad",
-  "choreCategories": ["Kitchen", "Cleaning"]
-}
-```
-
-### Children Management
-
-#### Get Children
-```http
-GET /api/users/children
-Authorization: Bearer {token}
-```
-
-#### Add Child
-```http
-POST /api/users/children
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "firstName": "Emma",
-  "lastName": "Doe",
-  "birthDate": "2015-05-20",
-  "username": "emma_doe",
-  "loginCode": "1234",
-  "nickName": "Emmy",
-  "avatar": "👧"
-}
-```
-
-### AI & Chat
-
-#### Chat with AI
-```http
-POST /api/ai/chat
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "message": "How can I teach my child about saving?",
-  "session_id": "optional_session_id",
-  "image": "base64_encoded_image_optional"
-}
-
-Response: {
-  "success": true,
-  "response": "AI response here",
-  "session_id": "session_id"
-}
-```
-
-#### Speech to Text
-```http
-POST /api/ai/speech-to-text
-Authorization: Bearer {token}
-Content-Type: multipart/form-data
-
-{
-  "audio": audio_file
-}
-```
-
-### Goals & Progress
-
-#### Create Goal (Child)
-```http
-POST /api/goals
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "title": "New Bicycle",
-  "category": "Toy",
-  "amount": 150.00,
-  "duration": 30,
-  "description": "A cool mountain bike"
-}
-```
-
-#### Approve Goal (Parent)
-```http
-POST /api/goals/{goal_id}/approve
-Authorization: Bearer {token}
-```
-
-### Chores
-
-#### Get Chores
-```http
-GET /api/chores
-Authorization: Bearer {token}
-```
-
-#### Create Chore (Parent)
-```http
-POST /api/chores
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "title": "Clean Room",
-  "description": "Organize toys and make bed",
-  "category": "Cleaning",
-  "difficulty": "Easy",
-  "reward": 5.00,
-  "dueDate": "2026-01-15",
-  "assignedTo": "emma_doe"
-}
-```
-
-### Notifications
-
-#### Get Notifications
-```http
-GET /api/notifications
-Authorization: Bearer {token}
-
-Response: {
-  "success": true,
-  "notifications": [ ... ],
-  "unread_count": 3
-}
-```
+1. **Talk to AI Coach** - Ask questions about money management
+2. **Complete Chores** - Earn money through assigned tasks
+3. **Set Goals** - Create savings goals for desired items
+4. **Track Progress** - Watch savings grow and achievements unlock
+5. **Learn & Play** - Complete challenges and earn badges
 
 ---
 
-## 📸 Screenshots
+## 📸 Demo
 
-> Add screenshots of your application here once deployed
+### Parent Dashboard
+*[Add screenshot of parent dashboard]*
 
-```
-[Parent Dashboard]     [Child Interface]      [AI Chat]
-[Goal Tracking]        [Chore Management]     [Progress Analytics]
-```
+### AI Coach Interface
+*[Add screenshot of AI coach chat]*
+
+### Child's Goal Tracker
+*[Add screenshot of goal tracking]*
+
+---
+
+## 🎓 Technical Highlights
+
+### What Makes This Project Stand Out
+
+1. **AI Integration**
+   - Real-world application of GPT-4o
+   - Multi-modal AI interactions (text, voice, image)
+   - Personalized learning algorithms
+
+2. **Full-Stack Development**
+   - Modern React frontend with Redux
+   - RESTful API design with Flask
+   - MongoDB schema design for flexibility
+
+3. **User Experience Design**
+   - Age-appropriate UX for children
+   - Intuitive parent dashboard
+   - Gamification psychology principles
+
+4. **Security Best Practices**
+   - OAuth 2.0 and JWT authentication
+   - Email verification system
+   - Secure parent-child access controls
+
+5. **Scalable Architecture**
+   - Microservices-ready design
+   - Cloud deployment (Vercel + Railway)
+   - Docker containerization
 
 ---
 
 ## 🗺️ Roadmap
 
-### Current Version (v1.0)
-- ✅ User authentication (Email & Google OAuth)
-- ✅ Parent and child profiles
-- ✅ AI-powered financial coach
-- ✅ Goal setting and tracking
-- ✅ Chore management system
-- ✅ Progress notifications
+### Version 1.0 (Current)
+- ✅ AI financial coach with GPT-4o
+- ✅ Parent and child dashboards
+- ✅ Chore and reward system
+- ✅ Goal tracking and savings
+- ✅ Email notifications
 
-### Upcoming Features (v2.0)
-- 🔲 Mobile app (React Native)
-- 🔲 Multiple language support
-- 🔲 Advanced analytics dashboard
-- 🔲 Social features (share achievements)
-- 🔲 Marketplace for virtual goods
-- 🔲 Parent-child messaging system
-- 🔲 Integration with real banks (future)
-- 🔲 Augmented reality learning modules
-
----
-
-## 🔒 Security Features
-
-- **🔐 Password Hashing**: Bcrypt encryption for all passwords
-- **🎫 JWT Tokens**: Secure session management with expiration
-- **📧 Email Verification**: OTP-based email confirmation
-- **🛡️ CORS Protection**: Configured cross-origin resource sharing
-- **🔑 Environment Variables**: Sensitive data stored securely
-- **✅ Input Validation**: Server-side validation for all inputs
-- **🚫 SQL Injection Prevention**: NoSQL database with sanitized queries
+### Version 2.0 (Planned)
+- [ ] Mobile app (iOS and Android)
+- [ ] Multi-language support
+- [ ] Advanced analytics and insights
+- [ ] Integration with real bank accounts (with parental controls)
+- [ ] Social features (friend challenges, group goals)
+- [ ] Enhanced AI capabilities (budget recommendations, spending analysis)
 
 ---
 
@@ -591,152 +257,80 @@ Response: {
 
 ```bash
 # Run backend tests
-pytest
+pytest tests/
 
 # Run frontend tests
-cd client
-npm test
-
-# Run with coverage
-npm test -- --coverage
+cd client && npm test
 ```
 
 ---
 
-## 📦 Deployment
+## 📁 Project Structure
 
-### Deploy to Vercel (Frontend)
-
-```bash
-cd client
-npm run build
-vercel --prod
 ```
-
-### Deploy to Railway (Backend)
-
-```bash
-# Install Railway CLI
-npm i -g @railway/cli
-
-# Login
-railway login
-
-# Deploy
-railway up
-```
-
-### Docker Deployment
-
-```bash
-# Build image
-docker build -t aidiy .
-
-# Run container
-docker run -p 5500:5500 -p 3000:3000 aidiy
+AiDIY/
+├── api/                    # API endpoints
+│   ├── auth/              # Authentication routes
+│   ├── coach/             # AI coach endpoints
+│   └── user/              # User management
+├── client/                # React frontend
+│   ├── src/
+│   │   ├── components/    # Reusable components
+│   │   ├── pages/         # Page components
+│   │   ├── redux/         # State management
+│   │   └── utils/         # Utility functions
+│   └── public/            # Static assets
+├── server/                # Flask backend
+│   ├── models/            # Database models
+│   ├── services/          # Business logic
+│   └── utils/             # Helper functions
+├── templates/             # HTML templates
+├── app.py                 # Main Flask application
+├── requirements.txt       # Python dependencies
+└── Procfile              # Deployment configuration
 ```
 
 ---
 
 ## 🤝 Contributing
 
-Contributions make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**!
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ---
 
-## 📜 License
+## 📄 License
 
-Distributed under the MIT License. See `LICENSE` file for more information.
+This project is licensed under the **MIT License** - see the LICENSE file for details.
 
 ---
 
-## 👨‍💻 Author
+## 👤 Author
 
-**Your Name**
+**Bhavana Reddy**
 
 - GitHub: [@bhavanareddy19](https://github.com/bhavanareddy19)
-- LinkedIn: [https://www.linkedin.com/in/bhavanareddy19/](https://www.linkedin.com/in/bhavanareddy19/)
-- Email: Bhavana.Vippala@colorado.edu
-- Portfolio: [https://bhavana19portfolio.netlify.app/](https://bhavana19portfolio.netlify.app/)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
 
 ---
 
 ## 🙏 Acknowledgments
 
-- [OpenAI](https://openai.com/) for the GPT-4o API
-- [MongoDB](https://www.mongodb.com/) for the database platform
-- [React](https://reactjs.org/) and [Flask](https://flask.palletsprojects.com/) communities
-- All contributors and testers who helped improve this project
-- Parents and educators who provided valuable feedback
-
----
-
-## 💡 Project Highlights for Recruiters
-
-### Technical Achievements
-
-✨ **Full-Stack Development**
-- Built complete MERN-style stack (MongoDB, Express-like Flask, React, Node.js)
-- Implemented RESTful API architecture
-- Real-time data synchronization
-
-✨ **AI Integration**
-- Integrated OpenAI GPT-4o for intelligent responses
-- Multi-modal AI (text, voice, image processing)
-- Context-aware conversation management
-
-✨ **Authentication & Security**
-- JWT-based authentication
-- OAuth 2.0 integration (Google)
-- OTP email verification system
-- Bcrypt password encryption
-
-✨ **State Management**
-- Redux Toolkit for complex state management
-- Optimistic UI updates
-- Persistent session handling
-
-✨ **Database Design**
-- NoSQL schema design with MongoDB
-- Efficient indexing strategies
-- Data relationship management
-
-✨ **User Experience**
-- Responsive design for all devices
-- Intuitive navigation flows
-- Gamification elements
-- Real-time notifications
-
-### Business Value
-
-📊 **Addresses Real Problem**: Financial illiteracy in children
-🎯 **Target Market**: Parents with children aged 5-18
-💰 **Monetization Potential**: Premium features, subscriptions
-📈 **Scalability**: Cloud-ready architecture
-🌍 **Market Reach**: Global accessibility
-
-### Code Quality
-
-- Clean, maintainable code structure
-- Comprehensive error handling
-- RESTful API conventions
-- Component-based architecture
-- Separation of concerns
+- OpenAI for GPT-4o API
+- React and Flask communities
+- All contributors and testers
 
 ---
 
 <div align="center">
 
-### ⭐ Star this repository if you find it helpful!
+**Making financial literacy fun, one child at a time! 💰🎯**
 
-**Made with ❤️ and lots of ☕**
-
-[Back to Top](#-aidiy---ai-powered-financial-literacy-platform)
+[⬆ Back to Top](#-aidiy---ai-powered-financial-literacy-for-kids)
 
 </div>
