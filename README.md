@@ -1,336 +1,387 @@
-# 💰 AiDIY - AI-Powered Financial Literacy for Kids
+<div align="center">
+
+# 🧒💰 AIDIY - AI-Powered Financial Literacy Platform
+
+### *Teaching Kids Smart Money Habits Through AI & Gamification*
+
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Flask](https://img.shields.io/badge/Flask-2.0+-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://mongodb.com)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com)
+
+<br/>
+
+[Features](#-key-features) • [Architecture](#-system-architecture) • [Tech Stack](#-technology-stack) • [Installation](#-quick-start) • [API](#-api-documentation)
+
+---
+
+</div>
+
+## 📋 Project Overview
+
+**AIDIY** is an end-to-end **AI-powered EdTech platform** designed to revolutionize how children learn financial literacy. By combining **machine learning**, **natural language processing**, and **gamification strategies**, this platform delivers personalized learning experiences that adapt to each child's unique needs.
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         AIDIY PLATFORM ECOSYSTEM                            │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│    👨‍👩‍👧‍👦 PARENTS                    🤖 AI ENGINE                 👶 CHILDREN    │
+│    ┌─────────────┐              ┌─────────────┐              ┌───────────┐  │
+│    │ Dashboard   │◄────────────►│ GPT-4o NLP  │◄────────────►│ Gamified  │  │
+│    │ Analytics   │              │ Voice AI    │              │ Learning  │  │
+│    │ Task Mgmt   │              │ Insights    │              │ Rewards   │  │
+│    └─────────────┘              └─────────────┘              └───────────┘  │
+│           │                           │                           │         │
+│           └───────────────────────────┼───────────────────────────┘         │
+│                                       ▼                                     │
+│                          ┌─────────────────────┐                            │
+│                          │   📊 DATA LAYER     │                            │
+│                          │  MongoDB + Redis    │                            │
+│                          │  Real-time Sync     │                            │
+│                          └─────────────────────┘                            │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🎯 Key Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 🔬 AI & Machine Learning
+- **GPT-4o Integration** - Context-aware conversational AI
+- **Speech-to-Text** - Real-time voice processing
+- **Personalized Recommendations** - Adaptive learning paths
+- **Sentiment Analysis** - Understanding user engagement
+
+</td>
+<td width="50%">
+
+### 📊 Data Analytics & Insights
+- **Progress Tracking** - Real-time learning metrics
+- **Behavioral Analytics** - User interaction patterns
+- **Performance Dashboards** - Visual data storytelling
+- **Assessment Scoring** - Multi-dimensional evaluation
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🏗️ Data Engineering
+- **RESTful API Design** - Scalable endpoint architecture
+- **MongoDB Aggregation** - Complex data pipelines
+- **JWT Authentication** - Secure token management
+- **Real-time Data Sync** - Cross-platform consistency
+
+</td>
+<td width="50%">
+
+### 🎮 User Experience
+- **Gamification Engine** - Points, badges, rewards
+- **Multi-child Profiles** - Family management system
+- **Responsive Design** - Mobile-first approach
+- **Animated AI Avatar** - Engaging interactions
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🏛️ System Architecture
+
+```
+┌────────────────────────────────────────────────────────────────────────────────┐
+│                              CLIENT LAYER (React 18)                           │
+├────────────────────────────────────────────────────────────────────────────────┤
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │   HomePage   │  │  Dashboard   │  │  Assessment  │  │   AI Chat    │       │
+│  │   Component  │  │  Analytics   │  │    Quiz      │  │   Interface  │       │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘       │
+│         │                 │                 │                 │                │
+│         └─────────────────┴─────────────────┴─────────────────┘                │
+│                                    │                                           │
+│                          ┌─────────▼─────────┐                                 │
+│                          │   Redux Toolkit   │                                 │
+│                          │   State Manager   │                                 │
+│                          └─────────┬─────────┘                                 │
+└────────────────────────────────────┼───────────────────────────────────────────┘
+                                     │ HTTPS/REST
+┌────────────────────────────────────┼───────────────────────────────────────────┐
+│                              API GATEWAY LAYER                                 │
+├────────────────────────────────────┼───────────────────────────────────────────┤
+│                          ┌─────────▼─────────┐                                 │
+│                          │   Flask Server    │                                 │
+│                          │   (Python 3.8+)   │                                 │
+│                          └─────────┬─────────┘                                 │
+│         ┌──────────────────────────┼──────────────────────────┐                │
+│         │                          │                          │                │
+│  ┌──────▼──────┐           ┌───────▼───────┐          ┌───────▼───────┐       │
+│  │    Auth     │           │   User Mgmt   │          │   AI Service  │       │
+│  │  /auth/*    │           │   /api/users  │          │   /api/ai/*   │       │
+│  │  JWT+OAuth  │           │   CRUD Ops    │          │   NLP Engine  │       │
+│  └──────┬──────┘           └───────┬───────┘          └───────┬───────┘       │
+└─────────┼──────────────────────────┼──────────────────────────┼────────────────┘
+          │                          │                          │
+┌─────────┼──────────────────────────┼──────────────────────────┼────────────────┐
+│         │                   DATA LAYER                        │                │
+├─────────┼──────────────────────────┼──────────────────────────┼────────────────┤
+│  ┌──────▼──────┐           ┌───────▼───────┐          ┌───────▼───────┐       │
+│  │   MongoDB   │           │   User Data   │          │   OpenAI API  │       │
+│  │   Atlas     │◄─────────►│   Collections │          │   GPT-4o      │       │
+│  │   Cluster   │           │   Indexes     │          │   Whisper     │       │
+│  └─────────────┘           └───────────────┘          └───────────────┘       │
+└────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 💻 Technology Stack
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.0-blue.svg)
-![JavaScript](https://img.shields.io/badge/JavaScript-86.3%25-yellow.svg)
-![Python](https://img.shields.io/badge/Python-11.7%25-green.svg)
-![License](https://img.shields.io/badge/license-MIT-purple.svg)
+### Backend & Data Engineering
+| Technology | Purpose | Skill Category |
+|:----------:|:--------|:---------------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | Core backend logic, API development | **Data Engineering** |
+| ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) | RESTful API framework | **Backend Development** |
+| ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) | NoSQL database, aggregation pipelines | **Data Engineering** |
+| ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white) | Secure authentication tokens | **Security** |
 
-**Teaching children money management through gamification and AI-powered coaching**
+### AI & Machine Learning
+| Technology | Purpose | Skill Category |
+|:----------:|:--------|:---------------|
+| ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white) | GPT-4o for conversational AI | **AI Engineering** |
+| ![NLP](https://img.shields.io/badge/NLP-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) | Natural Language Processing | **Data Science** |
+| ![Speech](https://img.shields.io/badge/Whisper-74aa9c?style=flat-square&logo=openai&logoColor=white) | Speech-to-text processing | **AI Engineering** |
 
-[Features](#-key-features) • [Tech Stack](#-tech-stack) • [Installation](#-installation) • [Demo](#-demo)
+### Frontend & Visualization
+| Technology | Purpose | Skill Category |
+|:----------:|:--------|:---------------|
+| ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) | Component-based UI | **Full Stack** |
+| ![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white) | State management | **Full Stack** |
+| ![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) | Responsive styling | **UI/UX** |
 
 </div>
 
 ---
 
-## 📋 Overview
-
-**AiDIY** is an innovative financial literacy platform that makes learning about money fun and engaging for children. By combining gamification, AI coaching, and practical money management tools, AiDIY helps kids develop healthy financial habits from an early age.
-
-### 🎯 The Problem
-
-- **70% of children** lack basic financial literacy skills
-- Traditional financial education is boring and inaccessible
-- Parents struggle to teach money management effectively
-- Kids learn best through interactive, gamified experiences
-
-### ✅ The Solution
-
-AiDIY provides:
-- **AI Financial Coach** powered by GPT-4o for personalized guidance
-- **Gamified Learning** with challenges, rewards, and goal tracking
-- **Practical Tools** for savings, budgeting, and chore management
-- **Parent Dashboard** for monitoring progress and engagement
-
----
-
-## ✨ Key Features
-
-### 🤖 **AI-Powered Coaching**
-- GPT-4o-based financial advisor tailored for children
-- Multi-modal support: voice, text, and image interactions
-- Personalized learning paths based on age and progress
-- Real-time financial tips and encouragement
-
-### 🎮 **Gamification System**
-- Interactive challenges and quests
-- Achievement badges and rewards
-- Progress tracking and leaderboards
-- Goal-setting and milestone celebrations
-
-### 💼 **Money Management Tools**
-- Virtual savings accounts with goal tracking
-- Chore assignment with reward systems
-- Budget planning and expense tracking
-- Parent-supervised transactions
-
-### 👨‍👩‍👧 **Parent Dashboard**
-- Real-time progress monitoring
-- Activity logs and reports
-- Customizable chore assignments
-- Notification system for milestones
-
-### 🔒 **Security & Authentication**
-- JWT and OAuth 2.0 authentication
-- OTP email verification
-- Multi-user profile management
-- Secure data encryption
-
----
-
-## 🛠️ Tech Stack
-
-### **Frontend**
-- **React 18.2** - Modern UI library with hooks
-- **Redux Toolkit** - State management
-- **Tailwind CSS** - Utility-first styling
-- **React Router v6** - Client-side routing
-
-### **Backend**
-- **Python 3.8+**
-- **Flask 2.3** - Lightweight web framework
-- **MongoDB** - NoSQL database for flexible data models
-- **OpenAI GPT-4o** - AI coaching intelligence
-- **JWT** - Secure authentication
-
-### **Deployment**
-- **Vercel** - Frontend hosting
-- **Railway/Docker** - Backend containerization
-- **Git** - Version control
-
----
-
-## 🏗️ Architecture
+## 📈 Data Pipeline & Analytics
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                   React Frontend                     │
-│  ┌──────────────┐  ┌──────────────┐  ┌───────────┐ │
-│  │   Dashboard  │  │   AI Chat    │  │  Rewards  │ │
-│  │   (Parent)   │  │   (Child)    │  │  System   │ │
-│  └──────┬───────┘  └──────┬───────┘  └─────┬─────┘ │
-└─────────┼──────────────────┼─────────────────┼──────┘
-          │                  │                 │
-          └──────────────────┼─────────────────┘
-                             ▼
-          ┌─────────────────────────────────────┐
-          │        Flask REST API Server        │
-          │  ┌────────────┐  ┌───────────────┐ │
-          │  │   Auth     │  │   AI Coach    │ │
-          │  │  Service   │  │   (GPT-4o)    │ │
-          │  └─────┬──────┘  └───────┬───────┘ │
-          └────────┼──────────────────┼─────────┘
-                   ▼                  ▼
-          ┌────────────────┐  ┌──────────────┐
-          │    MongoDB     │  │  OpenAI API  │
-          │   Database     │  │              │
-          └────────────────┘  └──────────────┘
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          DATA FLOW ARCHITECTURE                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+  USER INTERACTIONS          DATA PROCESSING           INSIGHTS GENERATION
+  ─────────────────         ─────────────────         ────────────────────
+        │                          │                          │
+        ▼                          ▼                          ▼
+  ┌───────────┐             ┌───────────┐             ┌───────────────┐
+  │  Events   │────────────►│  ETL      │────────────►│  Aggregated   │
+  │  Capture  │             │  Pipeline │             │  Metrics      │
+  └───────────┘             └───────────┘             └───────────────┘
+        │                          │                          │
+        ▼                          ▼                          ▼
+  ┌───────────┐             ┌───────────┐             ┌───────────────┐
+  │  Quiz     │────────────►│  Score    │────────────►│  Learning     │
+  │  Answers  │             │  Compute  │             │  Analytics    │
+  └───────────┘             └───────────┘             └───────────────┘
+        │                          │                          │
+        ▼                          ▼                          ▼
+  ┌───────────┐             ┌───────────┐             ┌───────────────┐
+  │  Voice    │────────────►│  Speech   │────────────►│  Sentiment    │
+  │  Input    │             │  Analysis │             │  Insights     │
+  └───────────┘             └───────────┘             └───────────────┘
 ```
+
+### Assessment Analytics Engine
+
+The platform evaluates children across **6 key financial literacy dimensions**:
+
+| Dimension | Metrics Tracked | Analysis Type |
+|-----------|-----------------|---------------|
+| 💵 Money Recognition | Accuracy, Response Time | Quantitative |
+| 🏦 Saving Habits | Frequency, Consistency | Behavioral |
+| 💼 Understanding Earning | Concept Grasp | Qualitative |
+| 🛒 Wants vs Needs | Decision Patterns | Classification |
+| 🎯 Purchasing Decisions | Risk Assessment | Predictive |
+| 📊 Financial Responsibility | Progress Tracking | Longitudinal |
 
 ---
 
-## 🚀 Installation
+## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 16+ and npm
-- Python 3.8+
-- MongoDB instance
-- OpenAI API key
-
-### Backend Setup
 
 ```bash
-# Clone the repository
-git clone https://github.com/bhavanareddy19/AiDIY.git
-cd AiDIY
+Python 3.8+  │  Node.js 14+  │  MongoDB  │  OpenAI API Key
+```
 
-# Install Python dependencies
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/yourusername/AIDIY-Dev.git && cd AIDIY-Dev
+
+# 2. Backend setup
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-# Set up environment variables
-cp .env.example .env
-# Add your OpenAI API key and MongoDB connection string
+# 3. Frontend setup
+cd client && npm install
 
-# Run the Flask server
+# 4. Configure environment
+cp .env.example .env
+# Edit .env with your credentials
+```
+
+### Environment Variables
+
+```env
+# Database
+MONGODB_URI=mongodb+srv://your-cluster-url
+
+# Authentication
+JWT_SECRET=your-secure-secret-key
+
+# AI Services
+OPENAI_API_KEY=sk-your-api-key
+
+# Email (Optional)
+EMAIL_HOST=smtp.gmail.com
+EMAIL_USER=your-email@gmail.com
+```
+
+### Launch
+
+```bash
+# Terminal 1: Start Backend (Port 5500)
 python app.py
+
+# Terminal 2: Start Frontend (Port 3000)
+cd client && npm start
 ```
 
-Server will be available at `http://localhost:5000`
-
-### Frontend Setup
-
-```bash
-# Navigate to client directory
-cd client
-
-# Install dependencies
-npm install
-
-# Set up environment variables
-cp .env.example .env
-# Configure API endpoint
-
-# Start development server
-npm start
-```
-
-Application will open at `http://localhost:3000`
-
 ---
 
-## 💡 Usage
+## 📡 API Documentation
 
-### For Parents
+### Authentication Endpoints
 
-1. **Create Account** - Sign up with email verification
-2. **Add Children** - Create profiles for your kids
-3. **Set Up Chores** - Assign tasks with reward amounts
-4. **Monitor Progress** - Track savings, goals, and achievements
-5. **Approve Transactions** - Review and approve spending requests
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| `POST` | `/auth/register` | User registration with OTP | ❌ |
+| `POST` | `/auth/verify-otp` | Email verification | ❌ |
+| `POST` | `/auth/login` | JWT token generation | ❌ |
+| `POST` | `/auth/google` | OAuth 2.0 authentication | ❌ |
+| `POST` | `/api/auth/logout` | Session termination | ✅ |
 
-### For Children
+### User Management
 
-1. **Talk to AI Coach** - Ask questions about money management
-2. **Complete Chores** - Earn money through assigned tasks
-3. **Set Goals** - Create savings goals for desired items
-4. **Track Progress** - Watch savings grow and achievements unlock
-5. **Learn & Play** - Complete challenges and earn badges
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| `GET` | `/api/users/profile` | Fetch user data | ✅ |
+| `PUT` | `/api/users/profile` | Update profile | ✅ |
+| `GET` | `/api/users/children` | List children profiles | ✅ |
+| `POST` | `/api/users/children` | Create child profile | ✅ |
 
----
+### AI Services
 
-## 📸 Demo
-
-### Parent Dashboard
-*[Add screenshot of parent dashboard]*
-
-### AI Coach Interface
-*[Add screenshot of AI coach chat]*
-
-### Child's Goal Tracker
-*[Add screenshot of goal tracking]*
-
----
-
-## 🎓 Technical Highlights
-
-### What Makes This Project Stand Out
-
-1. **AI Integration**
-   - Real-world application of GPT-4o
-   - Multi-modal AI interactions (text, voice, image)
-   - Personalized learning algorithms
-
-2. **Full-Stack Development**
-   - Modern React frontend with Redux
-   - RESTful API design with Flask
-   - MongoDB schema design for flexibility
-
-3. **User Experience Design**
-   - Age-appropriate UX for children
-   - Intuitive parent dashboard
-   - Gamification psychology principles
-
-4. **Security Best Practices**
-   - OAuth 2.0 and JWT authentication
-   - Email verification system
-   - Secure parent-child access controls
-
-5. **Scalable Architecture**
-   - Microservices-ready design
-   - Cloud deployment (Vercel + Railway)
-   - Docker containerization
-
----
-
-## 🗺️ Roadmap
-
-### Version 1.0 (Current)
-- ✅ AI financial coach with GPT-4o
-- ✅ Parent and child dashboards
-- ✅ Chore and reward system
-- ✅ Goal tracking and savings
-- ✅ Email notifications
-
-### Version 2.0 (Planned)
-- [ ] Mobile app (iOS and Android)
-- [ ] Multi-language support
-- [ ] Advanced analytics and insights
-- [ ] Integration with real bank accounts (with parental controls)
-- [ ] Social features (friend challenges, group goals)
-- [ ] Enhanced AI capabilities (budget recommendations, spending analysis)
-
----
-
-## 🧪 Testing
-
-```bash
-# Run backend tests
-pytest tests/
-
-# Run frontend tests
-cd client && npm test
-```
+| Method | Endpoint | Description | Auth |
+|--------|----------|-------------|------|
+| `POST` | `/api/ai/chat` | GPT-4o conversation | ✅ |
+| `POST` | `/api/ai/speech-to-text` | Whisper transcription | ✅ |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-AiDIY/
-├── api/                    # API endpoints
-│   ├── auth/              # Authentication routes
-│   ├── coach/             # AI coach endpoints
-│   └── user/              # User management
-├── client/                # React frontend
+AIDIY-Dev/
+│
+├── 📊 app.py                    # Flask application entry point
+├── 📋 requirements.txt          # Python dependencies
+├── 🔐 .env                      # Environment configuration
+│
+├── 🖥️ client/                   # React Frontend
 │   ├── src/
-│   │   ├── components/    # Reusable components
-│   │   ├── pages/         # Page components
-│   │   ├── redux/         # State management
-│   │   └── utils/         # Utility functions
-│   └── public/            # Static assets
-├── server/                # Flask backend
-│   ├── models/            # Database models
-│   ├── services/          # Business logic
-│   └── utils/             # Helper functions
-├── templates/             # HTML templates
-├── app.py                 # Main Flask application
-├── requirements.txt       # Python dependencies
-└── Procfile              # Deployment configuration
+│   │   ├── components/          # UI Components
+│   │   │   ├── HomePage.jsx
+│   │   │   ├── ParentDashboard.jsx
+│   │   │   ├── AssessmentQuiz.jsx
+│   │   │   └── AIAvatar.jsx
+│   │   ├── store/               # Redux State Management
+│   │   └── App.js
+│   └── package.json
+│
+├── 🔧 server/                   # API Routes & Services
+│   ├── routes/
+│   ├── models/
+│   └── services/
+│
+└── 📖 README.md
 ```
 
 ---
 
-## 🤝 Contributing
+## 🔒 Security Implementation
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the LICENSE file for details.
+| Feature | Implementation | Purpose |
+|---------|----------------|---------|
+| **Password Hashing** | bcrypt with salt rounds | Secure credential storage |
+| **Token Management** | JWT with expiration | Stateless authentication |
+| **CORS Policy** | Whitelist configuration | Cross-origin protection |
+| **Input Validation** | Server-side sanitization | Injection prevention |
+| **OAuth 2.0** | Google authentication | Third-party auth security |
 
 ---
 
-## 👤 Author
+## 🧠 Skills Demonstrated
 
-**Bhavana Reddy**
+<div align="center">
 
-- GitHub: [@bhavanareddy19](https://github.com/bhavanareddy19)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
+| Data Analyst | Data Scientist | Data Engineer | AI Engineer |
+|:------------:|:--------------:|:-------------:|:-----------:|
+| Dashboard Design | ML Integration | API Development | GPT-4o Integration |
+| KPI Tracking | NLP Processing | Database Design | Speech-to-Text |
+| Data Visualization | Predictive Models | ETL Pipelines | Prompt Engineering |
+| User Analytics | Feature Engineering | Data Modeling | Conversational AI |
+| Progress Metrics | Sentiment Analysis | Query Optimization | Voice Processing |
+
+</div>
 
 ---
 
-## 🙏 Acknowledgments
+## 🔮 Future Enhancements
 
-- OpenAI for GPT-4o API
-- React and Flask communities
-- All contributors and testers
+- [ ] **Real-time Analytics Dashboard** - Apache Kafka integration
+- [ ] **ML Recommendation Engine** - TensorFlow/PyTorch models
+- [ ] **Data Warehouse** - AWS Redshift/BigQuery integration
+- [ ] **A/B Testing Framework** - Statistical significance testing
+- [ ] **Advanced NLP** - Custom fine-tuned models
 
 ---
 
 <div align="center">
 
-**Making financial literacy fun, one child at a time! 💰🎯**
+### 🤝 Let's Connect
 
-[⬆ Back to Top](#-aidiy---ai-powered-financial-literacy-for-kids)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/bhavanareddy19/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel)](https://bhavana19portfolio.netlify.app/)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail)](mailto:Bhavana.Vippala@colorado.edu)
+
+---
+
+*Built with passion for education and technology*
+
+**⭐ Star this repo if you found it interesting!**
 
 </div>
